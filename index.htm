@@ -160,17 +160,16 @@
         transform:rotate(-45deg);
             right: 300px;
         top: -20px;
+        animation: bounce3 ease-in-out 3.5s infinite alternate;
     }
     .photo-2{
         height:auto;
         width:auto;
         position:absolute;
         border:1px solid #fff;
-        -ms-transform:rotate(-45deg);
-        -webkit-transform:rotate(-45deg);
-        transform:rotate(-45deg);
-            right: -38px;
+        right: -38px;
         top: 200px;
+        animation: bounce4 ease-in-out 4s infinite alternate;
     }
     .pht-hemalatha{
         margin:15px;
@@ -192,6 +191,44 @@
     	color: #fff;
     	text-decoration: none;
     }
+    .location img{
+    	    animation: location ease-in-out 2s infinite alternate;
+    }
+     .pht-mathu{
+    	    animation: bounce1 ease-in-out 3s infinite alternate;
+    }
+     .pht-hemalatha{
+    	    animation: bounce2 ease-in-out 5s infinite alternate;
+    }
+@keyframes location {
+    0%   {transform:translateY(0);}
+    50%  {transform:translateY(-10px);}
+    100% {transform:translateY(0);}
+}
+
+@keyframes bounce1 {
+    0%   {transform:translate(0,0);}
+    50%  {transform:translate(20px,-20px);}
+    100% {transform:translate(0,0);}
+}
+
+@keyframes bounce2 {
+    0%   {transform:translate(0,0);}
+    50%  {transform:translate(10px,-10px);}
+    100% {transform:translate(0,0);}
+}
+@keyframes bounce3 {
+    0%   {transform:translate(0,0) rotate(-45deg);}
+    50%  {transform:translate(20px,-20px) rotate(-45deg);}
+    100% {transform:translate(0,0) rotate(-45deg);}
+}
+
+@keyframes bounce4 {
+    0%   {transform:translate(0,0) rotate(-45deg);}
+    50%  {transform:translate(10px,-10px) rotate(-45deg);}
+    100% {transform:translate(0,0) rotate(-45deg);}
+}
+
     </style>
 </head>
 

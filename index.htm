@@ -45,6 +45,7 @@
         height: calc(100% - 60px);
         position:absolute;
         margin:30px;
+        overflow: hidden;
     }
     .hero{
         position: relative;
@@ -234,7 +235,7 @@
 }
 
 
-@media screen and (max-width: 1000px) and (min-width: 320px) {
+@media screen and (max-width: 500px) and (min-width: 320px) {
 	.hero{
         top: 15%;
         left: 5%;
@@ -283,6 +284,19 @@
     } 
     .heart{
         top: 27%; 
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 500px) {
+	.hero{
+        top: 15%;
+        left: 5%;
+        width:100%;
+    }
+    .info{
+        position: absolute;
+        left: 5%;
+        width:100%;
+        bottom: 10%;
     }
 }
     </style>

@@ -5,7 +5,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/png" href="http://images.clipartpanda.com/love-clipart-clip-art-love-clipart.png">
-    <meta name="viewport" content="width=1543px, maximum-scale=1.0">
+    <title>Fieldtrips</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <style>
         @font-face {
@@ -18,7 +19,7 @@
         }
         @font-face {
           font-family: "GothamRounded-Medium";
-          src: url('files/fonts/gotham-rounded-book.ttf') format("truetype");
+          src: url('files/fonts/gotham-rounded-medium.otf') format("truetype");
         }
         body{
             width:100%;
@@ -34,6 +35,9 @@
         }
         div{
             -webkit-text-size-adjust:none
+        }*{
+        	-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
         }
     .container-in{
         background:rgb(255, 117, 52);
@@ -229,6 +233,23 @@
     100% {transform:translate(0,0) rotate(-45deg);}
 }
 
+
+@media screen and (max-width: 1000px) and (min-width: 320px) {
+	.photos{
+		bottom:500px;
+		top:auto;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.info{
+        position: relative;
+        margin-top: 100px;
+        left: 10%;
+        width:100%;
+        bottom: auto;
+    }
+}
     </style>
 </head>
 
